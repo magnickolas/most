@@ -14,7 +14,7 @@ source=(https://www.jedsoft.org/releases/most/most-$pkgver.tar.gz{,.asc} package
 validpgpkeys=('64083373E9E1DE997EBBE7784B82D0B82930237D')  # John E. Davis <davis@space.mit.edu>
 sha512sums=('3aa3cb46ddd456532a009fb9cfcd746971396be33e03e52a15b754a6d7683f4efd020edb0ec4eb36d22ba20f050aaac4ba6cdd3b69bb5701ea58ddb9a903c59d'
             'SKIP'
-            '260d28097bbc46d12a53b261d235641da1833860d0cb74a701ec49cb28afa3997694b482fa65c1ba4aed68028cdd6740f64aab4c60d8d5a2559297c0a08ec627')
+            'de50b212c6b77f938d7e451e2a3585e6bb13b302d05215e239b627c219bbb4f6fc23a4f005894d4f96cad8e0d0916b4670cd5fb525828a988ec5aef79801b110')
 
 prepare() {
   patch --directory="${pkgname}-${pkgver}" --forward --strip=1 --input="${srcdir}/package.patch"
